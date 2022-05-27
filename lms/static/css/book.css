@@ -1,0 +1,102 @@
+
+nav{
+    
+        overflow: hidden;
+        background-color:#000000cf;
+        text-align: right;
+        color:white;
+        float: left;
+        align-content: center;
+        width: 100%;
+        font-size: 17px;
+        position: sticky;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+        top: 0;
+        margin-top:-15px;
+}
+a
+{  color: white;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 14px 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    height: 100%;
+}
+input[type=text]{
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin-right: 16px;
+    padding: 6px;
+    font-size: 17px;
+}
+input[type=submit]{
+    background-color:f1f1f1 ;
+    margin-right: 16px;
+    padding: 6px;
+    font-size: 17px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(80, 23, 23);
+}
+.contaner{
+    width: 96%;
+    margin: 20px 20px 20px 70px;
+}
+.book{
+    width: 45%;
+    float: left;
+    margin: 10px 10px;
+    background-color: #f1f1f1;
+    border: whitesmoke 2px thick ;
+    background-color: rgb(39, 16, 7);
+    color:white;
+
+    
+}
+.icon{
+    width: 32%;
+    float: left;
+   
+   
+}
+.containt{
+    float: left;
+    width: 68%;
+}
+
+
+div{
+    display: block;
+}
+button{
+  
+    background-color: rgb(148, 88, 40);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: tomato solid;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.search{
+    text-align: center;
+    margin-top: 30px;
+}
+h1{
+    color: tomato;
+}
+nav a:hover{
+    background-color: #666;
+    color: white;
+}
+

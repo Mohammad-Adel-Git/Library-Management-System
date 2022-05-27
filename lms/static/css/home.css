@@ -1,0 +1,83 @@
+body{
+    background-image: url(home_photo.jpg);
+}
+div.bu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: inherit;
+    margin-top: 80px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 22px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+nav{
+    
+    margin-top: -15px; 
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+nav li{
+    display: inline;
+}
+a{
+    
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+
+}
+div.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #210303;
+    text-shadow: 2px 2px 5px #f16969;
+    font-size: 50px;
+    margin-top: 250px;
+    font-size: 25px;
+    font-family: Blackadder ITC;
+    background-color: #e6d1b4;
+    max-width: 450px;
+    margin-left: 520px;
+}

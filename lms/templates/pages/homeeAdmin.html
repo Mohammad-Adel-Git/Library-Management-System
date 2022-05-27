@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/homee.css' %}">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Welcome in Library</h1>
+        <h3>Read and educate</h3>
+    </div>
+
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="{% url 'books' %}">Books</a>
+        <a href="{% url 'addBook' %}">Add Books</a>
+        <a href="{% url 'editBook' %}">Edit Books</a>
+        <a href="{% url 'profile' %}">profile</a>
+        <a href="{% url 'logoutUser' %}" class="right">log out</a>
+    </div>
+</body>
+
+</html>

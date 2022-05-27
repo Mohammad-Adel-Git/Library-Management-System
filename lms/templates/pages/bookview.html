@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bookview.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}"> Home </a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'books' %}"> Books</a></li>
+                <li style="float: right;"><a href="{% url 'logoutUser' %}">logout</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+<br>
+<br>
+    <div class="contaner">
+        <div class="book">
+            <div class="icon">
+                <img style="height: 250px ; width: 250px;" src="{% static 'css/bookk.gif' %}" alt="">
+            </div>
+            <div class="containt">
+                <br>
+                <h2> book title </h2>
+                <table class="tablee" >
+                    <tr>
+                        <td>category : {{book.category}}</td>
+                        <td>Author : {{book.author}}</td>
+                    </tr>
+                    <tr>
+                        <td>Publishig year : {{book.publication_year}}</td>
+                        <td>ISBN : {{book.ISBN}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Status : avilable
+                        </td>
+                        <td>
+                            price per Day :{{book.price}}
+                        </td>
+                    </tr>
+                    
+                </table>
+                <!-- <p>catagory : Art</p>
+                <p>status : avilable</p>
+                <p>Author : Abd elrahman hany</p>
+                <p>Publishig year : 2020</p>
+                <p>ISBN : C20-5</p> -->
+                <button class="b1" id="bot1"  onclick="myFunction(1)" >book</button>
+                <button class="b2" id="bot2" onclick="myFunction(2)" >return book</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="{% static 'script/view.js' %}"></script>
+</body>
+
+</html>

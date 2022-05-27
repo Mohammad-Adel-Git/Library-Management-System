@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prfile</title>
+    <link rel="stylesheet" href="{% static 'css/prfile.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'home' %}" class="active">Home</a>
+        <a href="{% url 'books' %}">Books</a>
+        <a href="{% url 'editProfile' %}">EditProfile</a>
+        <a href="{% url 'logoutUser' %}" class="right">log out</a>
+    </div>
+    <div class="card">
+        <div class="photo"></div>
+            <div class="m">
+                <h3>First Name: <span>{{user.first_name}}</span></h3>
+                <h3>Last Name: <span>{{user.last_name}}</span></h3>
+                <h3>E-mail: <span>{{user.email}}</span></h3>
+            </div>
+            
+    </div>
+    
+</body>
+</html>

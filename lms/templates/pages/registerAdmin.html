@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>     
+    <form method="POST" style="background-color:rgb(122, 67, 67);">
+        {% csrf_token %}
+        <h1>Sign Up As Admin</h1>        
+        {% for field in AdminSF %}
+            <p>
+                {{field.label_tag}} <br>
+                {{field}}
+                {% if field.help_text %}
+                    <small style="color: grey;"> {{field.help_text}} </small>
+                {% endif %}
+                {% for error in field.errors %}
+                    <p style="color:red;">{{error}}</p>
+                {% endfor %}
+            </p>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+    {{form.errors}}
+    <p>already have an account? <a href="Loginadmin.html">Login here</a></p>
+</body>
+
+</html>

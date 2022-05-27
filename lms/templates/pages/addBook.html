@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>add books</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <h1>Add book</h1>
+        {{form}}
+        <!-- <input type="text" name="" placeholder="title">
+        <input type="text" name="" placeholder="Author">
+        <input type="number" name="" placeholder="price">
+        <input type="text" name="" placeholder="Publication year">
+        <input type="text" name="" placeholder="ISBN">
+        <input type="text" name="" placeholder="catagory"> -->
+        
+        <button type="submit">submit</button> 
+    </form>     
+    
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+a{
+    color: white;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 14px 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    height: 100%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(80, 23, 23);
+}
+
+nav{
+    overflow: hidden;
+    background-color:#000000cf;
+    text-align: right;
+    color:white;
+    float: left;
+    align-content: center;
+    width: 100%;
+    font-size: 17px;
+    position: sticky;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    top: 0;
+    margin-top:-15px;
+    
+}
+.book{
+
+    width: 95%;
+    background-color: #f1f1f1;
+    border: whitesmoke 2px thick ;
+    background-color: rgb(39, 16, 7);
+    color:white;
+    height: 100%;
+    margin: 50px 70px;
+    max-height: 100%;
+    
+}
+.icon{
+    float: left;
+    width: 40%;
+    float: left;
+   
+   
+}
+.contaner{
+    width: 96%;
+    margin-top: 20px;
+    height: 80%;   
+}
+.containt{
+    width: 60%;
+    margin-left: 40%;
+
+}
+
+button{
+  
+    background-color: rgb(148, 88, 40);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: tomato solid;
+    float: right;
+    margin-left: 370px;
+    color: white;
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: #666;
+    color: white;
+}
+.b1{
+    text-align: center;
+    visibility: visible;
+    margin-right: 500px;
+    margin-top: 30px;
+}
+.b2{
+    margin-left: 370px;
+    visibility: hidden;
+    margin-right: 500px;
+    
+}
+table{
+    width: 100%;
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+    margin-left: 200px;
+}

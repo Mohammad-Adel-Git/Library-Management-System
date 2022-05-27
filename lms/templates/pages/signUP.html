@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>library</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <!-- <nav>
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="#"> about </a></li>
+            <li><a href="#"> opinion </a></li>
+            <li><a href="UserLogin.html"> UserLogin </a></li>
+            <li><a href="AdminLogin.html"> AdminLogin </a></li>
+        </ul>
+    </nav> -->
+    <div class=" text">
+        <h1>University's library</h1>
+    </div>
+
+    <div class="bu">
+        <a href="{% url 'registerAdmin' %}" ><button class="button button1">SignUP Admin</button></a>
+        <a href="{% url 'registerUser' %}"><button class="button button2">SignUP User</button></a>
+    </div>  
+
+</body>
+
+</html>

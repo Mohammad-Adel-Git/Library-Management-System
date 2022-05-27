@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}"> Home </a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li style="float: right;"><a href="{% url 'logoutUser' %}">logout</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+
+<br>
+<br>
+
+    <div class="search">
+        <form>
+
+            <!-- <input type="text" placeholder="Search..">
+            <input type="submit"> -->
+            
+
+        </form>
+    </div>
+
+
+    <div class="contaner">
+        <div class="book">
+            <div class="icon">
+                <img style="height: 160px ; width: 160px;" src="{% static 'css/bookk.gif' %}" alt="">
+            </div>
+            <div class="containt">
+                <form method="POST" style="padding: 150px; margin-top:20;">
+                    {% csrf_token %}
+                    {{form}} 
+                    <button type="submit">Save</button>
+
+ 
+
+
+
+               
+                </form>
+                <!-- <a href="bookview.html"> <button>View</button> </a> -->
+               
+            </div>
+        </div>
+         
+   
+
+
+
+
+        <!-- <div class="book">
+            <div class="icon">
+                <img style="height: 160px ; width: 160px;" src="{% static 'css/bookk.gif' %}" alt="">
+            </div>
+            <div class="containt">
+
+                <h2> book title </h2>
+                <p>catagory : Art</p>
+                <p>status : avilable</p>
+                <p>ISBN : C20-5</p>
+                <a href="bookview.html"> <button>View</button> </a>
+               
+            </div>
+        </div>
+
+
+
+
+        <div class="book">
+            <div class="icon">
+                <img style="height: 160px ; width: 160px;" src="{% static 'css/bookk.gif' %}" alt="">
+            </div>
+            <div class="containt">
+
+                <h2> book title </h2>
+                <p>catagory : Art</p>
+                <p>status : avilable</p>
+                <p>ISBN : C20-5</p>
+                <a href="bookview.html"> <button>View</button> </a>
+               
+            </div>
+        </div>
+
+
+
+
+        <div class="book">
+            <div class="icon">
+                <img style="height: 160px ; width: 160px;" src="{% static 'css/bookk.gif' %}" alt="">
+            </div>
+            <div class="containt">
+
+                <h2> book title </h2>
+                <p>catagory : Art</p>
+                <p>status : avilable</p>
+                <p>ISBN : C20-5</p>
+                <a href="bookview.html"> <button>View</button> </a>
+            </div>
+        </div> -->
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
